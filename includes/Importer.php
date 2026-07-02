@@ -4,7 +4,6 @@ namespace ArDesign\SupplierCsvImport;
 
 use WP_Error;
 use WC_Product;
-use WC_Product_Attribute;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -159,7 +158,7 @@ class Importer
         }
     }
 
-    public static function sanitizeSchedule($value): string
+    public static function sanitizeSchedule(string $value): string
     {
         $allowed = ['hourly', 'twicedaily', 'daily'];
         return in_array($value, $allowed, true) ? $value : 'hourly';
@@ -498,7 +497,10 @@ class Importer
 
         $taxonomy = 'pa_' . sanitize_title($name);
         if (! \taxonomy_exists($taxonomy)) {
-            /** @phpstan-ignore-next-line -- wc_create_attribute is defined by WooCommerce */
+            if (! function_exists('wc_create_attribute')) {
+                return;
+            }
+
             $attribute_id = \wc_create_attribute([
                 'name' => $name,
                 'slug' => sanitize_title($name),
@@ -538,8 +540,11 @@ class Importer
         }
 
         $attribute_data = $product->get_attributes();
-        /** @var WC_Product_Attribute $attr */
-        $attr = new WC_Product_Attribute(); // @phpstan-ignore-line
+        if (! class_exists('\WC_Product_Attribute')) {
+            return;
+        }
+
+        $attr = new \WC_Product_Attribute();
         $attr->set_id($attribute_id ?? 0);
         $attr->set_name($taxonomy);
         $attr->set_options([$value]);
