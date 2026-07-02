@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AR Design Supplier CSV Import 1.0.3\n"
+"POT-Creation-Date: 2026-07-02 00:00+0000\n"
+"PO-Revision-Date: 2026-07-02 00:00+0000\n"
+"Last-Translator: Arpád Horák\n"
+"Language-Team: AR Design\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: sk_SK\n"
+
+msgid "The legacy wc-omega-connector plugin was deactivated automatically."
+msgstr "Starý plugin wc-omega-connector bol automaticky deaktivovaný."
+
+msgid "Supplier CSV Import"
+msgstr "Import CSV dodávateľa"
+
+msgid "Configure CSV parsing, matching, field mapping, and WooCommerce-specific import behavior from this screen."
+msgstr "Nastavte parsovanie CSV, párovanie, mapovanie polí a správanie importu pre WooCommerce z tejto obrazovky."
+
+msgid "Save settings"
+msgstr "Uložiť nastavenia"
+
+msgid "Run import now"
+msgstr "Spustiť import teraz"
+
+msgid "Hourly"
+msgstr "Každú hodinu"
+
+msgid "Twice daily"
+msgstr "Dvakrát denne"
+
+msgid "Daily"
+msgstr "Denne"
+
+msgid "CSV source URL"
+msgstr "URL zdroja CSV"
+
+msgid "Import interval"
+msgstr "Interval importu"
+
+msgid "CSV delimiter"
+msgstr "Oddeľovač CSV"
+
+msgid "CSV enclosure"
+msgstr "Ohraničovač CSV"
+
+msgid "CSV contains header row"
+msgstr "CSV obsahuje hlavičku"
+
+msgid "Skip first rows"
+msgstr "Preskočiť prvé riadky"
+
+msgid "Match products by"
+msgstr "Párovať produkty podľa"
+
+msgid "Import behavior"
+msgstr "Správanie importu"
+
+msgid "Default product type"
+msgstr "Predvolený typ produktu"
+
+msgid "Field mapping"
+msgstr "Mapovanie polí"
+
+msgid "Category handling"
+msgstr "Správa kategórií"
+
+msgid "Import product attributes"
+msgstr "Importovať atribúty produktu"
+
+msgid "Import product images"
+msgstr "Importovať obrázky produktu"
+
+msgid "Import stock data"
+msgstr "Importovať údaje o sklade"
+
+msgid "Supplier CSV settings"
+msgstr "Nastavenia importu CSV dodávateľa"
+
+msgid "Unauthorized request."
+msgstr "Neoprávnená požiadavka."
+
+msgid "Supplier CSV file is empty or invalid."
+msgstr "Súbor CSV je prázdny alebo neplatný."
+
+msgid "Supplier CSV import completed: %d created, %d updated."
+msgstr "Import CSV dodávateľa dokončený: %d vytvorených, %d aktualizovaných."
+
+msgid "Supplier CSV import completed: no matching products found for the configured criteria."
+msgstr "Import CSV dodávateľa dokončený: pre zadané kritériá neboli nájdené žiadne zodpovedajúce produkty."
+
+msgid "Supplier CSV import completed with no changes."
+msgstr "Import CSV dodávateľa dokončený bez zmien."
+
+msgid "Unable to download CSV, HTTP %s."
+msgstr "Nepodarilo sa stiahnuť CSV, HTTP %s."
+
+msgid "Downloaded CSV is empty."
+msgstr "Stiahnuté CSV je prázdne."
+
+msgid "Unable to write supplier CSV file."
+msgstr "Nepodarilo sa zapísať súbor CSV dodávateľa."
+
+msgid "Supplier CSV import has been started manually. Results will appear after the import finishes."
+msgstr "Import CSV dodávateľa bol spustený manuálne. Výsledky sa zobrazia po dokončení importu."
+
+msgid "AR Design Supplier CSV Import requires WooCommerce to be active."
+msgstr "AR Design Supplier CSV Import vyžaduje aktívny WooCommerce."

@@ -3,7 +3,7 @@
  * Plugin Name: AR Design Supplier CSV Import
  * Plugin URI: https://github.com/Arpad70/woocommerce_ar-design-supplier-csv-import
  * Description: Import supplier CSV products into WooCommerce from an external URL and save the downloaded file to /import.
- * Version: 1.0.2
+ * Version: 1.0.4
  * Author: Arpád Horák
  * Author URI: https://arpad-horak.cz
  * Developer: Arpád Horák
@@ -37,8 +37,12 @@ if (! defined('ARD_SUPPLIER_CSV_IMPORT_BASENAME')) {
 }
 
 if (! defined('ARD_SUPPLIER_CSV_IMPORT_PLUGIN_VERSION')) {
-    define('ARD_SUPPLIER_CSV_IMPORT_PLUGIN_VERSION', '1.0.2');
+    define('ARD_SUPPLIER_CSV_IMPORT_PLUGIN_VERSION', '1.0.4');
 }
+
+add_action('init', function (): void {
+    load_plugin_textdomain('ar-design-supplier-csv-import', false, dirname(plugin_basename(__FILE__)) . '/languages');
+});
 
 if (! defined('ARD_SUPPLIER_CSV_IMPORT_PLUGIN_REPOSITORY')) {
     define('ARD_SUPPLIER_CSV_IMPORT_PLUGIN_REPOSITORY', 'Arpad70/woocommerce_ar-design-supplier-csv-import');
