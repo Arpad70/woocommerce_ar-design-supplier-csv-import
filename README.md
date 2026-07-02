@@ -28,7 +28,7 @@ Samostatný plugin pro automatický import dodavatelského CSV do WooCommerce.
 ## Instalace z GitHub release
 
 - repozitář: https://github.com/Arpad70/woocommerce_ar-design-supplier-csv-import
-- release asset: https://github.com/Arpad70/woocommerce_ar-design-supplier-csv-import/releases/download/v1.0.0/ar-design-supplier-csv-import-v1.0.0.zip
+- release asset: https://github.com/Arpad70/woocommerce_ar-design-supplier-csv-import/releases/download/v1.0.1/ar-design-supplier-csv-import-v1.0.1.zip
 
 ## Konfigurace
 
